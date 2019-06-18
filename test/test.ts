@@ -8,12 +8,14 @@ tap.test('should create a valid instance of CsvSevdesk', async tools => {
 });
 
 tap.test('should create a valid csv file', async () => {
-  await csvSevdeskInstance.createCsvString([{
-    name: 'Amazon',
-    description: 'goods',
-    amount: '-10.40',
-    date: new Date('2019-04-23')
-  }]);
+  await csvSevdeskInstance.createCsvString([
+    {
+      name: 'Amazon',
+      description: 'goods',
+      amount: '-10.40',
+      date: new Date('2019-04-23')
+    }
+  ]);
 });
 
 tap.start();
