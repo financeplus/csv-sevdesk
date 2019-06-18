@@ -3,7 +3,7 @@
     "module": {
       "githost": "gitlab.com",
       "gitscope": "financeplus",
-      "gitrepo": "csv-spendesk",
+      "gitrepo": "csv-sevdesk",
       "shortDescription": "a tool to create sevdesk compliant csv files",
       "npmPackagename": "@financeplus/csv-spendesk",
       "license": "MIT",

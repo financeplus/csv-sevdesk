@@ -11,7 +11,7 @@ export interface ISevdeskCSVTransaction {
  * a CSV Spendesk class that enables the creation of Spendesk compatible csv files
  */
 export class CsvSevdesk {
-  public static async createCsvString (sevdeskCsvTransactionArray: ISevdeskCSVTransaction[]) {
+  public async createCsvString(sevdeskCsvTransactionArray: ISevdeskCSVTransaction[]) {
     return plugins.smartcsv.Csv.createCsvStringFromArray(sevdeskCsvTransactionArray);
   }
 }
