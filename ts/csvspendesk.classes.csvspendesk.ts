@@ -17,9 +17,9 @@ export class CsvSevdesk {
     for (const transaction of simpleCsvTransactionArray) {
       sevdeskCsvTransactions.push({
         date: plugins.smarttime.ExtendedDate.fromDate(transaction.date).exportToEuropeanDate(),
-        description: transaction.description,
         amount: transaction.amount.toString(),
-        name: transaction.name
+        name: transaction.name,
+        description: transaction.description,
       });
     }
 
