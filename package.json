@@ -1,6 +1,6 @@
 {
   "name": "@financeplus/csv-sevdesk",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "private": false,
   "description": "a tool to create sevdesk compliant csv files",
   "main": "dist/index.js",
