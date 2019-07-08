@@ -18,8 +18,8 @@ export class CsvSevdesk {
       sevdeskCsvTransactions.push({
         date: plugins.smarttime.ExtendedDate.fromDate(transaction.date).exportToEuropeanDate(),
         amount: transaction.amount.toString(),
-        name: transaction.name,
-        description: transaction.description,
+        name: `"${transaction.name}"`,
+        description: `"${transaction.description}"`,
       });
     }
 
