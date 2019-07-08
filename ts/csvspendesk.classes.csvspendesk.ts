@@ -23,6 +23,6 @@ export class CsvSevdesk {
       });
     }
 
-    return plugins.smartcsv.Csv.createCsvStringFromArray(simpleCsvTransactionArray);
+    return plugins.smartcsv.Csv.createCsvStringFromArray(sevdeskCsvTransactions);
   }
 }
