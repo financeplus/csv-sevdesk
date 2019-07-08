@@ -19,7 +19,7 @@ export class CsvSevdesk {
         date: plugins.smarttime.ExtendedDate.fromDate(transaction.date).exportToEuropeanDate(),
         description: transaction.description,
         amount: transaction.amount.toString(),
-        name: null
+        name: transaction.name
       });
     }
 
